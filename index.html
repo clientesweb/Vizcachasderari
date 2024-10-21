@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vizcachas de Rari</title>
+    <style>
+        :root {
+            --color-stone-100: #f5f5f4;
+            --color-stone-800: #292524;
+            --color-stone-900: #1c1917;
+            --color-orange-500: #f97316;
+            --color-orange-600: #ea580c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--color-stone-100);
+            color: var(--color-stone-900);
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .header {
+            position: relative;
+            height: 70vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .header-content {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 2rem;
+            border-radius: 0.5rem;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: var(--color-orange-500);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.25rem;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: var(--color-orange-600);
+        }
+
+        .footer {
+            background-color: var(--color-stone-800);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .header h2 {
+                font-size: 1.25rem;
+            }
+
+            .section-title {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://via.placeholder.com/1920x1080" alt="Vizcachas de Rari landscape" class="header-bg">
+        <div class="header-content">
+            <h1>Parque Cultural Vizcachas de Rari</h1>
+            <h2>Camping artesanal en la precordillera maulina</h2>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">Somos un parque con enfoque ecológico, cultural y artesanal</h2>
+                <div class="card">
+                    <p>Un organismo vivo muy poco intervenido con enfoque ecológico poniendo en valor el encuentro con la naturaleza profunda, la exploración y conexión con la flora y fauna nativas. Contamos con pozones y borde del Estero Juan Frío, en Rarí, Colbún, Región del Maule.</p>
+                </div>
+                <div class="grid">
+                    <img src="https://via.placeholder.com/400x300" alt="Vizcachas de Rari nature" style="width: 100%; height: auto; border-radius: 0.5rem;">
+                    <div>
+                        <h3>Nuestro entorno es rico y diverso en patrimonio</h3>
+                        <ul>
+                            <li>Gran biodiversidad</li>
+                            <li>Contamos con un entorno ecológico, bosque esclerófilo maduro, nacimiento y borde del río Rari para bañarse</li>
+                            <li>Zonas sombreadas, avistamiento de aves, flora y fauna nativas</li>
+                            <li>Cielos abiertos para observación de abundantes estrellas</li>
+                            <li>Agua de vertiente de gran pureza</li>
+                            <li>Un sendero de bosque mixto de hualo, esclerófilo y arrayanes entre otras especies nativas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="facilities" class="section" style="background-color: #CFD8DC;">
+            <div class="container">
+                <h2 class="section-title">Equipamiento</h2>
+                <p>Nuestro entorno ecológico está equipado con:</p>
+                <div class="grid">
+                    <ul>
+                        <li>Contamos con 10 sitios de campamento sombreados con bosque nativo y borde de río</li>
+                        <li>Contamos con un quincho equipado para cocinar, lavar y refrigerar</li>
+                        <li>2 sectores con baños</li>
+                        <li>Zona de estacionamiento interior</li>
+                        <li>Pozón natural para bañarse</li>
+                        <li>Zona de explanada para actividades y fogón</li>
+                        <li>Algunos puntos para conectarse a red eléctrica</li>
+                        <li>Senderos y sitios de interés como Piedra Las Vizcachas</li>
+                        <li>Sector casa del árbol habilitado para niños</li>
+                    </ul>
+                    <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+                        <img src="https://via.placeholder.com/150x150" alt="Camping site" style="width: 100%; height: auto; border-radius: 0.25rem;">
+                        <img src="https://via.placeholder.com/150x150" alt="Campfire" style="width: 100%; height: auto; border-radius: 0.25rem;">
+                        <img src="https://via.placeholder.com/150x150" alt="River" style="width: 100%; height: auto; border-radius: 0.25rem;">
+                        <img src="https://via.placeholder.com/150x150" alt="Facilities" style="width: 100%; height: auto; border-radius: 0.25rem;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="section" style="background-color: #F5E6D3;">
+            <div class="container">
+                <h2 class="section-title">Valores Camping temporada verano</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Niñeces 2 a 7 años</h3>
+                        <img src="https://via.placeholder.com/300x200" alt="Niños en el camping" style="width: 100%; height: auto; border-radius: 0.25rem; margin-bottom: 1rem;">
+                        <p class="text-2xl font-bold mb-2">$2.000 clp</p>
+                        <ul>
+                            <li>Rutas de interés</li>
+                            <li>Borde de Río</li>
+                            <li>Quincho</li>
+                            <li>Picnic con sombra</li>
+                            <li>Baños con duchas</li>
+                        </ul>
+                        <a href="tel:+56997225157" class="button" style="display: block; text-align: center; margin-top: 1rem;">RESERVA +56997225157</a>
+                    </div>
+                    <div class="card">
+                        <h3>Valor por Grupos sobre 100 personas</h3>
+                        <img src="https://via.placeholder.com/300x200" alt="Grupo grande en el camping" style="width: 100%; height: auto; border-radius: 0.25rem; margin-bottom: 1rem;">
+                        <p class="text-2xl font-bold mb-2">Desde $2.000clp *pp</p>
+                        <p class="mb-2">especial Scouts</p>
+                        <ul>
+                            <li>Rutas de interés</li>
+                            <li>Zona camping sombreada</li>
+                            <li>Quincho con lavaplatos</li>
+                            <li>Baños y duchas</li>
+                            <li>Zona fogata</li>
+                            <li>Exclusividad del Parque</li>
+                        </ul>
+                        <a href="#" class="button" style="display: block; text-align: center; margin-top: 1rem;">COTIZA</a>
+                    </div>
+                    <div class="card">
+                        <h3>Acampa por persona</h3>
+                        <img src="https://via.placeholder.com/300x200" alt="Persona acampando" style="width: 100%; height: auto; border-radius: 0.25rem; margin-bottom: 1rem;">
+                        <p class="text-2xl font-bold mb-2">Desde $6.000*</p>
+                        <ul>
+                            <li>Rutas de interés</li>
+                            <li>Borde de Río</li>
+                            <li>Quincho con lavaplatos</li>
+                            <li>Acampar bajo la sombra</li>
+                            <li>Conexión red eléctrica</li>
+                            <li>Uso zona fogata</li>
+                        </ul>
+                        <a href="tel:+56997225157" class="button" style="display: block; text-align: center; margin-top: 1rem;">RESERVA +56997225157</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="map" class="section">
+            <div class="container">
+                <h2 class="section-title">Mapa y rutas</h2>
+                <img src="https://via.placeholder.com/800x400" alt="Mapa de Vizcachas de Rari" style="width: 100%; height: auto; border-radius: 0.5rem; margin-bottom: 1rem;">
+                <h3>Rutas & Actividades</h3>
+                <p>
+                    Podrás visitar proyectos aledaños como la Glería de Arte Natural, la Cervecería de Montaña y los pozones naturales de piedra. Además de visitar Rarí el pueblo artesanal del mundo (artesanía en Crin) y conocer a sus tejedoras. Además de arrendar caballos para pasear en familia.
+                </p>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <div class="container">
+                <h2 class="section-title">Galería</h2>
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
+                    <img src="https://via.placeholder.com/200x200" alt="Gallery image 1" style="width: 100%; height: auto; border-radius: 0.25rem;">
+                    <img src="https://via.placeholder.com/200x200" alt="Gallery image 2" style="width: 100%; height: auto; border-radius: 0.25rem;">
+                    <img src="https://via.placeholder.com/200x200" alt="Gallery image 3" style="width: 100%; height: auto; border-radius: 0.25rem;">
+                    <img src="https://via.placeholder.com/200x200" alt="Gallery image 4" style="width: 100%; height: auto; border-radius: 0.25rem;">
+                    <img src="https://via.placeholder.com/200x200" alt="Gallery image 5" style="width: 100%; height: auto; border-radius: 0.25rem;">
+                    <img src="https://via.placeholder.com/200x200" alt="Gallery image 6" style="width: 100%; height: auto; border-radius: 0.25rem;">
+                    <img src="https://via.placeholder.com/200x200" alt="Gallery image 7" style="width: 100%; height: auto; border-radius: 0.25rem;">
+                    <img src="https://via.placeholder.com/200x200" alt="Gallery image 8" style="width: 100%; height: auto; border-radius: 0.25rem;">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section" style="background-color: var(--color-stone-800); color: white;">
+            <div class="container">
+                <h2 class="section-title">ESTAMOS EN RARI</h2>
+                <p>
+                    Calle Rarí s/n Km 10<br>
+                    Rarí Adentro<br>
+                    Colbún, región del Maule<br>
+                    Chile
+                </p>
+                <p>Contacto: parquevizcachasderari@gmail.com</p>
+                <div style="display: flex; align-items: center; margin-top: 2rem;">
+                    <img src="https://via.placeholder.com/100x100" alt="Vizcachas logo" style="width:  100px; height: 100px; margin-right: 1rem;">
+                    <div>
+                        <h3>Haz una reserva</h3>
+                        <p>al +569 97225157</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Parque Cultural Vizcachas de Rari. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Aquí puedes agregar cualquier funcionalidad JavaScript adicional si es necesario
+    </script>
+</body>
+</html>
